@@ -40,6 +40,5 @@
     </build>
     <scm>
         <developerConnection>scm:git:https://github.com/fankao/sgfpetclinic.git</developerConnection>
-    <tag>HEAD</tag>
   </scm>
 </project>
