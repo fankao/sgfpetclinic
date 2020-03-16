@@ -1,11 +1,11 @@
-package guru.springframwork.sfgpetclinic.services.map;
+package guru.springframework.sfgpetclinic.services.map;
 
-import guru.springframwork.sfgpetclinic.model.Owner;
-import guru.springframwork.sfgpetclinic.model.Pet;
-import guru.springframwork.sfgpetclinic.services.CrudService;
+import guru.springframework.sfgpetclinic.model.Pet;
+import guru.springframework.sfgpetclinic.services.CrudService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
-
+@Service
 public class PetMapService extends AbstractMapService<Pet,Long>implements CrudService<Pet,Long> {
     @Override
     public Set<Pet> findAll() {
