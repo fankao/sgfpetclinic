@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'owners')}" >
 <head>
     <meta charset="UTF-8">
     <title>List of Owners</title>
 </head>
 <body>
-    <h2 th:text="'List of Owners'"> List of Owners...</h2>
-    <table>
+    <h2 th:text="'List Of Owners'"></h2>
+    <table class="table table-striped">
         <thead>
-            <tr>
-               <th>Id</th>
-                <th>First name</th>
-                <th>Last name</th>
-            </tr>
+        <tr>
+            <th style="width: 150px;">Id</th>
+            <th style="width: 150px;">First name</th>
+            <th style="width: 200px;">Last name</th>
+        </tr>
         </thead>
         <tbody>
             <tr th:each="owner:${owners}">
@@ -21,7 +21,6 @@
                 <td th:text="${owner?.lastName}"></td>
             </tr>
         </tbody>
-
     </table>
 </body>
 </html>
